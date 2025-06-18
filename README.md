@@ -59,10 +59,6 @@ Generate professional, ready-to-print reports for all key tables including membe
 
 ---
 
-## 📷 Additional Screenshots
-
----
-
 ## 📦 Installation & Running the Project
 
 1. Clone the repository:
