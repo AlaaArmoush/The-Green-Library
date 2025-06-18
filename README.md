@@ -28,18 +28,10 @@
   Search for books with filters based on availability and user preferences for a faster, more intuitive experience.
 
 * 📊 **JasperReports Integration**
-  Generate professional reports for all key tables — including members, books, employees, publishers, and more.
+Generate professional, ready-to-print reports for all key tables including members, books, employees, publishers, and more.
 
 * 💳 **Membership Support**
   Distinction between **Free** and **Paid** memberships, enabling different access levels and borrowing capabilities.
-
----
-
-## ⚙️ Backend Highlights
-
-* Designed a robust **PostgreSQL schema** with proper entity relationships and constraints.
-* Developed backend logic to manage borrowing, returning, purchasing, and feedback functionality.
-* Improved performance and user experience by optimizing queries and using filtering mechanisms.
 
 ---
 
@@ -69,17 +61,6 @@
 
 ## 📷 Additional Screenshots
 
-<!-- Add any extra screenshots here (optional) -->
-
-* Member Profile
-  ![Member Profile](screenshots/member_profile.png)
-
-* Admin Panel
-  ![Admin Panel](screenshots/admin_panel.png)
-
-* Generated Report Example
-  ![Report Example](screenshots/report_example.png)
-
 ---
 
 ## 📦 Installation & Running the Project
@@ -93,14 +74,6 @@
 3. Open the project in your preferred Java IDE.
 4. Make sure JasperReports libraries and PostgreSQL JDBC driver are included.
 5. Run the application.
-
----
-
-## 📌 Future Improvements
-
-* Add graphical user interface (GUI) layer for broader usability.
-* Expand membership plan flexibility.
-* Implement overdue tracking and automated email reminders.
 
 ---
 
