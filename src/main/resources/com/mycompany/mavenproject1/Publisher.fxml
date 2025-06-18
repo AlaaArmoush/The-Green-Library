@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="HBox" prefHeight="660.0" prefWidth="1278.0" styleClass="HBox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.PublisherController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="280.0">
+         <children>
+            <AnchorPane fx:id="side_anchor" prefHeight="657.0" prefWidth="257.0" styleClass="side_anchor" stylesheets="@style.css">
+               <children>
+                  <AnchorPane fx:id="inner_pane" layoutX="7.0" layoutY="14.0" prefHeight="78.0" prefWidth="241.0" styleClass="inner_pane" stylesheets="@style.css" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.666666666666629" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="76.0" layoutX="20.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/admin%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="110.0" layoutY="10.0" prefHeight="31.0" prefWidth="126.0" text="Welcome" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="27.0">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="106.0" layoutY="42.0" prefHeight="31.0" prefWidth="126.0" text="Admin!">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="pay_bttn" layoutX="22.0" layoutY="111.0" mnemonicParsing="false" onAction="#PurchasesTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Purchases" textFill="WHITE" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/001-payment-method.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="pay_bttn1" layoutX="20.0" layoutY="188.0" mnemonicParsing="false" onAction="#CustomerTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Customers" textFill="WHITE" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/004-reading-book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="pay_bttn2" layoutX="20.0" layoutY="265.0" mnemonicParsing="false" onAction="#BorrowsTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Borrows" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/008-borrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="pay_bttn3" layoutX="20.0" layoutY="329.0" mnemonicParsing="false" onAction="#EmployeeTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Employee" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/007-librarian.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="pay_bttn4" layoutX="20.0" layoutY="409.0" mnemonicParsing="false" onAction="#BookTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Books" AnchorPane.bottomAnchor="496.33333333333337" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/005-books.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="pay_bttn5" layoutX="20.0" layoutY="470.0" mnemonicParsing="false" onAction="#AuthorTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Authors" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/002-editor.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="pay_bttn6" layoutX="20.0" layoutY="561.0" mnemonicParsing="false" onAction="#PublisherTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Publishers" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/006-publishing.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="pay_bttn61" layoutX="20.0" layoutY="585.0" mnemonicParsing="false" onAction="#FeedbackTable" prefHeight="50.0" prefWidth="240.0" stylesheets="@style.css" text="Feedback" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/customer-experience.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Century Gothic" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="pay_bttn" />
+                        <String fx:value="pay_bttn" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="660.0" prefWidth="666.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="15.0" layoutY="49.0" text="Attribute" textFill="#fff7ef" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="searchAttribute" layoutX="166.0" layoutY="80.0" prefHeight="35.0" prefWidth="142.0" AnchorPane.topAnchor="80.0" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="938.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/006-publishing.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="843.0" layoutY="79.0" mnemonicParsing="false" onAction="#searchAction" styleClass="pay_bttn" stylesheets="@style.css" text="Search" />
+                  <ComboBox fx:id="publisherCombo" layoutX="7.0" layoutY="78.0" prefHeight="35.0" prefWidth="150.0" promptText="None" styleClass="pay_bttn" stylesheets="@style.css" AnchorPane.topAnchor="80.0" />
+                  <Button layoutX="843.0" layoutY="1.0" mnemonicParsing="false" onAction="#LogOutAction" styleClass="pay_bttn" stylesheets="@style.css" text="Log Out">
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#report" prefHeight="48.0" prefWidth="60.0" stylesheets="@style.css" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="320.0">
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="34.0">
+                           <image>
+                              <Image url="@icons/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="HBox" />
+                        <String fx:value="rep_bttn" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="table" layoutX="11.0" layoutY="-67.0" prefHeight="432.0" prefWidth="975.0" styleClass="table" stylesheets="@style.css" AnchorPane.bottomAnchor="-164.33333333333337" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="-67.0">
+                     <columns>
+                        <TableColumn fx:id="id" prefWidth="200.0" style="-fx-background-color: #FFF7EF;" text="ID" />
+                        <TableColumn fx:id="name" prefWidth="400.0" style="-fx-background-color: #FFF7EF;" text="Name" />
+                        <TableColumn fx:id="Country" prefWidth="400.0" style="-fx-background-color: #FFF7EF;" text="Country" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addPublisherWindowCall" styleClass="pay_bttn" stylesheets="@style.css" text="Add New Publisher" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="11.0" />
+                  <Button layoutX="814.0" layoutY="168.0" mnemonicParsing="false" onAction="#removePublisher" styleClass="pay_bttn" stylesheets="@style.css" text="Remove Publisher" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="820.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

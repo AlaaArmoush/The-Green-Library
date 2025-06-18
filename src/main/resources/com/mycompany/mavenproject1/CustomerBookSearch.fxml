@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1278.0" styleClass="HBox" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.CustomerBookSearchController">
+   <children>
+      <AnchorPane prefHeight="86.0" prefWidth="1268.0" styleClass="side_anchor" stylesheets="@style.css" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="1088.0" layoutY="26.0" mnemonicParsing="false" onAction="#backToProfile" prefHeight="55.0" prefWidth="147.0" styleClass="pay_bttn" stylesheets="@style.css" text="profile">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/profile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="searchBar" layoutX="451.0" layoutY="32.0" prefHeight="42.0" prefWidth="387.0" promptText="search available books" />
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/bookshelf.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="116.0" layoutY="32.0" prefHeight="20.0" prefWidth="115.0" style="-fx-font-family: Century Gothic;" text="The Green">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="54.0" prefHeight="20.0" prefWidth="98.0" style="-fx-font-family: Century Gothic;" text="Library">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="bookCombo" layoutX="288.0" layoutY="33.0" prefHeight="42.0" prefWidth="150.0" promptText="Attribute" styleClass="pay_bttn" stylesheets="@style.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="108.0" prefHeight="547.0" prefWidth="754.0" styleClass="side_anchor" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="108.0">
+         <children>
+            <TableView fx:id="bookTable" layoutX="125.0" layoutY="82.0" prefHeight="414.0" prefWidth="968.0" styleClass="table">
+               <columns>
+                  <TableColumn fx:id="booknameColumn" prefWidth="300.0" style="-fx-background-color: #FFF7EF;" text="Book Name" />
+                  <TableColumn fx:id="bookidColumn" prefWidth="150.0" style="-fx-background-color: #FFF7EF;" text="Book ID" />
+                  <TableColumn fx:id="authornameColumn" prefWidth="250.0" style="-fx-background-color: #FFF7EF;" text="Author" />
+                  <TableColumn fx:id="publishernameColumn" prefWidth="300.0" style="-fx-background-color: #FFF7EF;" text="Publisher" />
+               </columns>
+            </TableView>
+            <Label layoutX="69.0" layoutY="2.0" prefHeight="78.0" prefWidth="125.0" style="-fx-font-family: Century Gothic;" text="Books">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="52.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/005-books.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1102.0" layoutY="388.0" mnemonicParsing="false" onAction="#purchaseAction" prefHeight="42.0" prefWidth="109.0" styleClass="pay_bttn" text="Purchase" />
+            <Button layoutX="1102.0" layoutY="438.0" mnemonicParsing="false" onAction="#borrowAction" prefHeight="42.0" prefWidth="109.0" styleClass="pay_bttn" text="Borrow" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

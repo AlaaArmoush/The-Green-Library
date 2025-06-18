@@ -1,0 +1,105 @@
+.side_anchor {
+    -fx-background-color:B6CEB6;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+
+.inner_pane{
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #7A3E48;
+}
+
+.pay_bttn{
+    -fx-background-color: #FFF7EF; 
+    -fx-text-fill: black;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+    -fx-font-family:Century Gothic;
+    -fx-font-size:16px;
+
+}
+
+.pay_bttn:hover{
+    -fx-background-color:#636563;
+    -fx-text-fill: black;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: WHITE;
+}
+
+.pay_bttn:pressed {
+    -fx-background-color: #3D3242;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+    -fx-text-fill: black;
+    -fx-animation: flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        -fx-background-color: #3D3242;
+    }
+    50% {
+        -fx-background-color: #141313;
+    }
+    100% {
+        -fx-background-color: #3D3242;
+    }
+}
+
+
+
+.table{
+    -fx-background-color:#FFF7EF;
+    -fx-border-width: 3px 3px 3px 3px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-border-style: solid;
+    -fx-border-color:  black;
+    -fx-background-color: #FFF7EF;
+}
+
+.HBox{
+        -fx-background-color: #5C755E;
+}
+
+.Column{
+    -fx-background-color: #5C755E;
+}
+
+.shadow {
+  -fx-width: 250px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 4); }
+.rep_bttn:hover{
+    -fx-background-color:#5C755E;
+    -fx-text-fill: black;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: WHITE;
+}
+
+.rep_bttn:pressed {
+    -fx-background-color: #5C755E;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+    -fx-text-fill: black;
+    -fx-animation: flicker 0.2s infinite alternate;
+}
